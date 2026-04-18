@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento — Espaço Café Central</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="nav-header">
+      <ul class="nav-links nav-left">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+      </ul>
+
+      <a href="/html/index.html" class="nav-logo">
+        <img src="/assets/logo-2.png" class="logo-image" />
+        <span class="nav-logo-texto">Espaço Café Central</span>
+      </a>
+
+      <ul class="nav-links nav-right">
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU MOBILE -->
+      <ul class="nav-mobile-overlay" id="navOverlay">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <div class="hero-wrapper">
+        <img
+          src="/assets/Placa elegante do Espaço Café Central.png"
+          class="hero-img"
+          alt="Placa do Espaço Café Central"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-conteudo">
+          <h1>Faça seu evento no<br />Espaço Café Central</h1>
+          <p class="hero-sub">
+            Um espaço pensado para tornar cada ocasião inesquecível
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="apresentacao">
+      <div class="apresentacao-inner">
+        <p class="apresentacao-destaque">Seu evento, do seu jeito —</p>
+        <p class="apresentacao-sub">com sabor, estilo e personalidade.</p>
+        <p class="apresentacao-texto">
+          Do café da manhã ao happy hour, criamos experiências únicas com
+          cardápio personalizado para eventos corporativos, casamentos,
+          aniversários, reuniões e encontros especiais.
+        </p>
+      </div>
+    </section>
+
+    <!-- ESPAÇOS -->
+    <section class="espacos">
+      <h2 class="espacos-titulo">nossos espaços</h2>
+
+      <div class="espacos-grid">
+        <div class="espaco-card">
+          <div class="espaco-img-wrapper">
+            <img src="/assets/casa-interno.png" alt="Salão interno" />
+            <div class="espaco-balao">
+              <i class="fa-solid fa-mug-hot"></i>
+              Salão Aconchegante
+            </div>
+          </div>
+          <div class="espaco-texto">
+            <p>
+              Um ambiente interno elegante e acolhedor, ideal para reunir
+              pessoas em torno de bons momentos e boa gastronomia.
+            </p>
+          </div>
+        </div>
+
+        <div class="espaco-card">
+          <div class="espaco-img-wrapper">
+            <img
+              src="/assets/image-fundo2.jpg"
+              alt="Espaço reservado da pizzaria"
+            />
+            <div class="espaco-balao">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+              Cantinho do Forno
+            </div>
+          </div>
+          <div class="espaco-texto">
+            <p>
+              Reservado, especial e com o perfume inconfundível do nosso forno
+              de pizza. Um espaço que só o Café Central tem — feito para quem
+              quer uma experiência verdadeiramente única.
+            </p>
+          </div>
+        </div>
+
+        <div class="espaco-card">
+          <div class="espaco-img-wrapper">
+            <img src="/assets/casa-deck.jpg" alt="Deck ao ar livre" />
+            <div class="espaco-balao">
+              <i class="fa-solid fa-sun"></i>
+              Deck ao Ar Livre
+            </div>
+          </div>
+          <div class="espaco-texto">
+            <p>
+              Para quem aprecia o ar livre, nosso deck foi especialmente pensado
+              para te receber — com a brisa, a vista e toda a hospitalidade do
+              Café Central.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="formulario-section">
+      <div class="formulario-wrapper">
+        <div class="formulario-img-wrapper">
+          <img src="/assets/deck-evento.png" alt="Deck para eventos" />
+          <div class="formulario-img-overlay">
+            <p>Vamos planejar<br />juntos?</p>
+          </div>
+        </div>
+
+        <div class="formulario-card">
+          <h2>Preencha e entraremos<br />em contato</h2>
+
+          <div class="form-grupo">
+            <label>Nome</label>
+            <input type="text" id="nome" placeholder="Seu nome completo" />
+          </div>
+
+          <div class="form-grupo">
+            <label>Telefone</label>
+            <input type="tel" id="telefone" placeholder="(32) 99999-9999" />
+          </div>
+
+          <div class="form-grupo">
+            <label>Número de convidados</label>
+            <input type="number" id="convidados" placeholder="Ex: 50" min="1" />
+          </div>
+
+          <div class="form-grupo">
+            <label>Data do evento</label>
+            <input type="date" id="data" />
+          </div>
+
+          <div class="form-grupo">
+            <label>Tipo de evento</label>
+            <select id="tipo">
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Formatura">Formatura</option>
+              <option value="Empresarial">Empresarial</option>
+              <option value="Casamento">Casamento</option>
+              <option value="Reunião">Reunião</option>
+              <option value="Aniversário">Aniversário</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label>Sua mensagem</label>
+            <textarea
+              id="mensagem"
+              placeholder="Conte mais sobre o seu evento..."
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button class="form-btn" onclick="enviarWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i>
+            Enviar pelo WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-conteudo">
+        <div class="footer-bloco">
+          <h3>Horários</h3>
+          <p>Segunda a Sexta: 11h às 21h</p>
+          <p>Sábado: 11h às 17h</p>
+          <p>Domingo: Fechado</p>
+        </div>
+
+        <div class="footer-bloco footer-centro">
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/espacocafecentral"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/553232168545"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="footer-copy">Espaço Café Central</p>
+        </div>
+
+        <div class="footer-bloco">
+          <h3>Localização</h3>
+          <p>Galeria Azarias Vilela, 36</p>
+          <p>Centro — Juiz de Fora, MG</p>
+          <p>CEP 36010-200</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // NAV MOBILE
+      const toggle = document.getElementById('navToggle')
+      const overlay = document.getElementById('navOverlay')
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('aberto')
+        overlay.classList.toggle('aberto')
+      })
+
+      overlay.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('aberto')
+          overlay.classList.remove('aberto')
+        })
+      })
+
+      // WHATSAPP
+      function enviarWhatsApp() {
+        const nome = document.getElementById('nome').value.trim()
+        const telefone = document.getElementById('telefone').value.trim()
+        const convidados = document.getElementById('convidados').value.trim()
+        const data = document.getElementById('data').value
+        const tipo = document.getElementById('tipo').value
+        const mensagem = document.getElementById('mensagem').value.trim()
+
+        if (!nome || !telefone || !convidados || !data || !tipo) {
+          alert('Por favor, preencha todos os campos obrigatórios.')
+          return
+        }
+
+        const [ano, mes, dia] = data.split('-')
+        const dataFormatada = `${dia}/${mes}/${ano}`
+
+        const texto =
+          `*Solicitação de Evento — Espaço Café Central*\n\n` +
+          `👤 *Nome:* ${nome}\n` +
+          `📞 *Telefone:* ${telefone}\n` +
+          `👥 *Convidados:* ${convidados}\n` +
+          `📅 *Data:* ${dataFormatada}\n` +
+          `🎉 *Tipo de evento:* ${tipo}\n` +
+          (mensagem ? `💬 *Mensagem:* ${mensagem}` : '')
+
+        const url = `https://wa.me/553232168545?text=${encodeURIComponent(texto)}`
+        window.open(url, '_blank')
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Café Central - Cardápio</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="nav-header">
+      <ul class="nav-links nav-left">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+      </ul>
+
+      <a href="/html/index.html" class="nav-logo">
+        <img src="/assets/logo-2.png" class="logo-image" />
+        <span class="nav-logo-texto">Espaço Café Central</span>
+      </a>
+
+      <ul class="nav-links nav-right">
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU MOBILE -->
+      <ul class="nav-mobile-overlay" id="navOverlay">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="cardapio-hero">
+      <img src="/assets/cardapio-img1.jpg" alt="Cardápio Espaço Café Central" />
+      <div class="hero-overlay">
+        <p class="hero-tag">Do café ao happy hour</p>
+        <h1>O seu ponto de encontro <br /><em>Favorito</em></h1>
+      </div>
+    </section>
+
+    <!-- ITENS DO CARDÁPIO -->
+    <section class="cardapio-itens">
+      <!-- CAFÉ -->
+      <div class="item-bloco">
+        <div class="item-texto">
+          <span class="item-numero">01</span>
+          <h2>Tudo se inicia num bom café</h2>
+          <p>
+            Para começar seu dia, nisso somos especialistas. Grãos selecionados,
+            preparo cuidadoso e aquele aroma que transforma qualquer manhã.
+          </p>
+        </div>
+        <div class="item-imagem">
+          <img src="/assets/cardapio-cafe.jpg" alt="Café" />
+        </div>
+      </div>
+
+      <!-- SALADA -->
+      <div class="item-bloco invertido">
+        <div class="item-imagem">
+          <img src="/assets/cardapio-salada.jpg" alt="Saladas" />
+        </div>
+        <div class="item-texto">
+          <span class="item-numero">02</span>
+          <h2>Saladas montadas</h2>
+          <p>
+            O charme e tradição da casa para os dias mais leves. Frescor,
+            equilíbrio e sabor em cada detalhe.
+          </p>
+        </div>
+      </div>
+
+      <!-- MASSA -->
+      <div class="item-bloco">
+        <div class="item-texto">
+          <span class="item-numero">03</span>
+          <h2>Massas montadas</h2>
+          <p>
+            Para aquele dia mais apetitoso, nossas massas são preparadas com
+            cuidado e tempero na medida certa.
+          </p>
+        </div>
+        <div class="item-imagem">
+          <img src="/assets/cardapio-massa.jpg" alt="Massas" />
+        </div>
+      </div>
+
+      <!-- PRATOS PRINCIPAIS -->
+      <div class="item-bloco invertido">
+        <div class="item-imagem dupla">
+          <img
+            src="/assets/cardapio-principal-individual.jpg"
+            alt="Prato individual"
+          />
+          <img src="/assets/cardapio-prato2.jpg" alt="Pratos principais" />
+        </div>
+        <div class="item-texto">
+          <span class="item-numero">04</span>
+          <h2>Pratos principais</h2>
+          <p>
+            Individuais para um momento só seu, ou para dividir com quem você
+            gosta. Do jeito que preferir.
+          </p>
+        </div>
+      </div>
+
+      <!-- BRUNCH -->
+      <div class="item-bloco">
+        <div class="item-texto">
+          <span class="item-numero">05</span>
+          <h2>Brunch</h2>
+          <p>
+            Que tal tirar uma tarde para aquele pelo brunch? Um momento especial
+            que mistura o melhor do café da manhã com o almoço.
+          </p>
+        </div>
+        <div class="item-imagem">
+          <img src="/assets/cardapio-brunch.jpg" alt="Brunch" />
+        </div>
+      </div>
+
+      <!-- PIZZA -->
+      <div class="item-bloco invertido">
+        <div class="item-imagem">
+          <img src="/assets/cardapio-pizza.jpg" alt="Pizza napolitana" />
+        </div>
+        <div class="item-texto">
+          <span class="item-numero">06</span>
+          <h2>Pizza napolitana</h2>
+          <p>
+            Sim, temos pizza — as queridinhas napolitanas, ideais para aquele
+            início de tarde. Feitas com massa 100% artesanal e os melhores
+            ingredientes para te atender.
+          </p>
+        </div>
+      </div>
+
+      <!-- HAPPY HOUR -->
+      <div class="item-bloco">
+        <div class="item-texto">
+          <span class="item-numero">07</span>
+          <h2>Happy Hour</h2>
+          <p>
+            E para finalizar seu dia com chave de ouro, nosso happy hour é o
+            momento perfeito para relaxar, celebrar e criar boas memórias.
+          </p>
+        </div>
+        <div class="item-imagem">
+          <img src="/assets/cardapio-happyhour.jpg" alt="Happy Hour" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-conteudo">
+        <div class="footer-bloco">
+          <h3>Horários</h3>
+          <p>Segunda a Sexta: 11h às 21h</p>
+          <p>Sábado: 11h às 17h</p>
+          <p>Domingo: Fechado</p>
+        </div>
+
+        <div class="footer-bloco footer-centro">
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/espacocafecentral"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/553232168545"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="footer-copy">Espaço Café Central</p>
+        </div>
+
+        <div class="footer-bloco">
+          <h3>Localização</h3>
+          <p>Galeria Azarias Vilela, 36</p>
+          <p>Centro — Juiz de Fora, MG</p>
+          <p>CEP 36010-200</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE CARDÁPIO DIGITAL -->
+    <a
+      href="https://espaco-cafe-central.goomer.app/menu"
+      target="_blank"
+      class="btn-cardapio-digital"
+      aria-label="Ver Cardápio Digital"
+    >
+      <i class="fa-solid fa-utensils"></i>
+      <span>Ver Cardápio Digital</span>
+    </a>
+
+    <script>
+      const toggle = document.getElementById('navToggle')
+      const overlay = document.getElementById('navOverlay')
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('aberto')
+        overlay.classList.toggle('aberto')
+      })
+
+      overlay.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('aberto')
+          overlay.classList.remove('aberto')
+        })
+      })
+    </script>
+  </body>
+</html>

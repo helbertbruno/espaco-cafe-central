@@ -1,0 +1,196 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  background-color: #000;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Jost', Arial, sans-serif;
+}
+
+/* ========================
+   MAIN — LAYOUT DOIS BLOCOS
+======================== */
+.reservas-main {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* FOTO */
+.reservas-foto {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.reservas-foto img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* OVERLAY */
+.foto-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  color: #fff;
+}
+
+/* FORMULÁRIO */
+.reservas-form {
+  width: 460px;
+  min-width: 340px;
+  background-color: #fff;
+  padding: 120px 45px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+/* TEXTO */
+.form-topo {
+  margin-bottom: 32px;
+}
+
+.form-topo h2 {
+  font-size: 2em;
+  color: #111;
+}
+
+.form-topo p {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* CAMPOS */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.campo input,
+.campo textarea {
+  border: 1px solid #ddd;
+  padding: 12px;
+  background-color: #fafafa;
+  font-size: 0.95em;
+  font-family: inherit;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #c79f5e;
+}
+
+/* BOTÃO */
+.zap-btn {
+  margin-top: 10px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: inherit;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.zap-btn:hover {
+  background-color: #1ebe5b;
+}
+
+/* ========================
+   FOOTER
+======================== */
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ========================
+   RESPONSIVO
+======================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .reservas-form {
+    width: 400px;
+    min-width: 300px;
+    padding: 120px 30px 50px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .reservas-main {
+    flex-direction: column;
+  }
+
+  .reservas-foto {
+    height: 260px;
+    flex: none;
+  }
+
+  .reservas-foto img {
+    height: 260px;
+  }
+
+  .reservas-form {
+    width: 100%;
+    min-width: unset;
+    padding: 40px 24px 60px;
+    justify-content: flex-start;
+  }
+
+  .form-topo h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 400px) {
+  .reservas-foto {
+    height: 200px;
+  }
+
+  .reservas-foto img {
+    height: 200px;
+  }
+
+  .reservas-form {
+    padding: 32px 18px 50px;
+  }
+
+  .form-topo h2 {
+    font-size: 1.4em;
+  }
+}

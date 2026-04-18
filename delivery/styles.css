@@ -1,0 +1,301 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ========================
+   HERO
+======================== */
+.delivery-hero {
+  position: relative;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+
+.hero-img-delivery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center 60%;
+}
+
+/* OVERLAY */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 80px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: #fff;
+}
+
+.hero-tag {
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #e2c48a;
+  margin-bottom: 12px;
+}
+
+.hero-overlay h1 {
+  font-size: clamp(2.2em, 4vw, 4em);
+  line-height: 1.2;
+}
+
+.hero-overlay h1 em {
+  color: #e2c48a;
+}
+
+/* ========================
+   SEÇÃO PLATAFORMAS
+======================== */
+.delivery-plataformas {
+  padding: 100px 40px;
+  max-width: 1000px;
+  margin: 60px auto;
+  background-color: #f5f0ea;
+  color: #2a2a2a;
+  border-radius: 12px;
+}
+
+/* INTRO */
+.plataformas-intro {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.plataformas-intro p {
+  font-size: 1.05em;
+  color: #666;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* CARDS */
+.plataformas-cards {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* CARD */
+.plataforma-card {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #e8e0d6;
+  border-radius: 8px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.plataforma-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ÍCONE */
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goomer-icon {
+  background-color: rgba(199, 159, 94, 0.12);
+  color: #c79f5e;
+}
+
+.ifood-icon {
+  background-color: rgba(234, 43, 43, 0.08);
+  color: #ea2b2b;
+}
+
+/* TEXTO */
+.card-conteudo h2 {
+  font-size: 1.8em;
+  color: #111;
+}
+
+.card-conteudo p {
+  font-size: 0.95em;
+  color: #777;
+}
+
+/* BOTÕES */
+.btn-plataforma {
+  margin-top: 10px;
+  padding: 13px 24px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.btn-plataforma:hover {
+  opacity: 0.85;
+}
+
+.btn-goomer {
+  background-color: #c79f5e;
+}
+
+.btn-ifood {
+  background-color: #ea2b2b;
+}
+
+/* DIVIDER */
+.cards-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cards-divider::before,
+.cards-divider::after {
+  content: '';
+  width: 1px;
+  height: 60px;
+  background-color: #ddd6cd;
+}
+
+.cards-divider span {
+  font-size: 0.8em;
+  color: #bbb;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background-color: #222;
+  border-top: 1px solid #c79f5e33;
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.footer-bloco h3 {
+  color: #c79f5e;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.footer-bloco p {
+  color: #aaa;
+  font-size: 0.85em;
+  line-height: 1.8;
+}
+
+/* ========================
+   RESPONSIVO
+======================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .delivery-plataformas {
+    padding: 80px 30px;
+    margin: 40px 20px;
+  }
+
+  .plataforma-card {
+    padding: 36px 28px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .delivery-hero {
+    height: 60vh;
+  }
+
+  .hero-overlay {
+    padding: 30px 24px;
+  }
+
+  .hero-overlay h1 {
+    font-size: clamp(1.8em, 6vw, 2.4em);
+  }
+
+  .delivery-plataformas {
+    padding: 50px 20px;
+    margin: 30px 16px;
+    border-radius: 8px;
+  }
+
+  .plataformas-intro {
+    margin-bottom: 40px;
+  }
+
+  .plataformas-cards {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* divider vira horizontal no mobile */
+  .cards-divider {
+    flex-direction: row;
+    padding: 16px 0;
+  }
+
+  .cards-divider::before,
+  .cards-divider::after {
+    width: 60px;
+    height: 1px;
+  }
+
+  .plataforma-card {
+    width: 100%;
+    padding: 32px 24px;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 400px) {
+  .delivery-hero {
+    height: 50vh;
+  }
+
+  .hero-overlay {
+    padding: 24px 16px;
+  }
+
+  .delivery-plataformas {
+    margin: 20px 10px;
+    padding: 40px 16px;
+  }
+}

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Café Central</title>
+
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="nav-header">
+      <ul class="nav-links nav-left">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+      </ul>
+
+      <a href="/html/index.html" class="nav-logo">
+        <img src="/assets/logo-2.png" class="logo-image" />
+        <span class="nav-logo-texto">Espaço Café Central</span>
+      </a>
+
+      <ul class="nav-links nav-right">
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU MOBILE -->
+      <ul class="nav-mobile-overlay" id="navOverlay">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <img
+        src="/assets/Placa elegante do Espaço Café Central.png"
+        class="hero-img"
+        alt="Imagem de fundo"
+      />
+
+      <div class="centralizado"></div>
+    </main>
+
+    <section class="ambiente">
+      <h2>a casa</h2>
+
+      <div class="ambiente-bloco">
+        <div class="ambiente-item">
+          <img src="/assets/casa-galeria.jpg" alt="Ambiente interno" />
+        </div>
+        <div class="ambiente-texto">
+          <p>
+            No coração da cidade, ao lado do Teatro Central, estamos em uma
+            galeria cheia de charme e tradição — o cenário perfeito para viver
+            bons momentos.
+          </p>
+        </div>
+      </div>
+
+      <div class="ambiente-bloco invertido">
+        <div class="ambiente-texto">
+          <p>
+            No nosso deck, cada detalhe convida você a desacelerar e aproveitar
+            — um espaço ao ar livre pensado para bons momentos.
+          </p>
+        </div>
+        <div class="ambiente-item">
+          <img src="/assets/casa-deck.jpg" alt="Deck externo" />
+        </div>
+      </div>
+
+      <div class="ambiente-bloco">
+        <div class="ambiente-item">
+          <img src="/assets/casa-interno.png" alt="Ambiente interno" />
+        </div>
+        <div class="ambiente-texto">
+          <p>
+            Contamos com um ambiente interno acolhedor, pensado para
+            proporcionar conforto e momentos agradáveis.
+          </p>
+        </div>
+      </div>
+
+      <div class="ambiente-bloco invertido">
+        <div class="ambiente-texto">
+          <p>
+            Um espaço pensado para os amantes de pizza, onde tradição, aroma e
+            sabor se encontram em cada preparo.
+          </p>
+        </div>
+        <div class="ambiente-item">
+          <img src="/assets/imagem-pizza.jpg" alt="Deck externo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CARDÁPIO -->
+    <section class="cardapio-section">
+      <h2 class="cardapio-titulo">cardápio</h2>
+      <div class="cardapio-bloco">
+        <img
+          src="/assets/cardapio-principal-individual.jpg"
+          alt="Pratos do cardápio"
+          class="cardapio-img"
+        />
+        <div class="cardapio-card">
+          <p>
+            Uma experiência gastronômica pensada para surpreender. Massas
+            artesanais, carnes nobres e sobremesas irresistíveis.
+          </p>
+          <p>
+            Cada prato preparado com ingredientes selecionados e toda a
+            dedicação da nossa cozinha.
+          </p>
+          <a
+            href="https://espaco-cafe-central.goomer.app/menu"
+            class="cardapio-btn"
+            >conheça nosso cardápio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO EVENTO -->
+    <section class="evento-section">
+      <h2 class="evento-titulo">evento</h2>
+      <div class="evento-bloco">
+        <div class="evento-card">
+          <p>
+            Um espaço versátil e aconchegante, ideal para tornar cada ocasião
+            especial. De reuniões íntimas a celebrações marcantes.
+          </p>
+          <p>
+            Cuidamos de cada detalhe para que o seu evento seja inesquecível,
+            com toda a tradição e hospitalidade do Espaço Café Central.
+          </p>
+          <a href="/evento/" class="evento-btn">conheça nossos eventos</a>
+        </div>
+        <img
+          src="/assets/evento.jpg"
+          alt="Eventos no Espaço Café Central"
+          class="evento-img"
+        />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-conteudo">
+        <!-- HORÁRIOS -->
+        <div class="footer-bloco">
+          <h3>Horários</h3>
+          <p>Segunda a Sexta: 11h às 21h</p>
+          <p>Sábado: 11h às 17h</p>
+          <p>Domingo: Fechado</p>
+        </div>
+
+        <!-- LOGO / CENTRO -->
+        <div class="footer-bloco footer-centro">
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/espacocafecentral"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/553232168545"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="footer-copy">Espaço Café Central</p>
+        </div>
+
+        <!-- ENDEREÇO -->
+        <div class="footer-bloco">
+          <h3>Localização</h3>
+          <p>Galeria Azarias Vilela, 36</p>
+          <p>Centro — Juiz de Fora, MG</p>
+          <p>CEP 36010-200</p>
+        </div>
+      </div>
+    </footer>
+    <!--script menu mobile-->
+    <script>
+      const toggle = document.getElementById('navToggle')
+      const overlay = document.getElementById('navOverlay')
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('aberto')
+        overlay.classList.toggle('aberto')
+      })
+
+      overlay.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('aberto')
+          overlay.classList.remove('aberto')
+        })
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Café Central - Reservas</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="nav-header">
+      <ul class="nav-links nav-left">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+      </ul>
+
+      <a href="/html/index.html" class="nav-logo">
+        <img src="/assets/logo-2.png" class="logo-image" />
+        <span class="nav-logo-texto">Espaço Café Central</span>
+      </a>
+
+      <ul class="nav-links nav-right">
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU MOBILE -->
+      <ul class="nav-mobile-overlay" id="navOverlay">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+    </nav>
+
+    <!-- RESERVAS -->
+    <main class="reservas-main">
+      <!-- FOTO -->
+      <div class="reservas-foto">
+        <img
+          src="/assets/casa-galeria.jpg"
+          alt="Ambiente do Espaço Café Central"
+        />
+        <div class="foto-overlay">
+          <p class="foto-tag">Reserve sua experiência</p>
+          <h1>Um lugar para<br /><em>bons momentos</em></h1>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <div class="reservas-form">
+        <div class="form-topo">
+          <h2>Entre em contato</h2>
+          <p>Fale com nossa equipe pelo WhatsApp e garanta sua reserva</p>
+        </div>
+
+        <form id="formWhatsapp">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              placeholder="(32) 9 0000-0000"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="data">Data desejada</label>
+            <input type="date" id="data" required />
+          </div>
+
+          <div class="campo">
+            <label for="pessoas">Número de pessoas</label>
+            <input
+              type="number"
+              id="pessoas"
+              placeholder="Ex: 4"
+              min="1"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Observações</label>
+            <textarea
+              id="mensagem"
+              rows="3"
+              placeholder="Aniversário, evento especial, restrição alimentar..."
+            ></textarea>
+          </div>
+
+          <button class="zap-btn" type="submit">
+            <i class="fa-brands fa-whatsapp"></i> Enviar no WhatsApp
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-social">
+        <a
+          href="https://www.instagram.com/espacocafecentral"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://wa.me/553232168545"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <p>Espaço Café Central</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      const toggle = document.getElementById('navToggle')
+      const overlay = document.getElementById('navOverlay')
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('aberto')
+        overlay.classList.toggle('aberto')
+      })
+
+      // fecha o menu ao clicar em qualquer link
+      overlay.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('aberto')
+          overlay.classList.remove('aberto')
+        })
+      })
+    </script>
+  </body>
+</html>

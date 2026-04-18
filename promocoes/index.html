@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promoções da Semana</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./promocoes.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav class="nav-header">
+      <ul class="nav-links nav-left">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+      </ul>
+
+      <a href="/html/index.html" class="nav-logo">
+        <img src="/assets/logo-2.png" class="logo-image" />
+        <span class="nav-logo-texto">Espaço Café Central</span>
+      </a>
+
+      <ul class="nav-links nav-right">
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU MOBILE -->
+      <ul class="nav-mobile-overlay" id="navOverlay">
+        <li><a href="/reservas/index.html">Reservas</a></li>
+        <li><a href="/cardapio/index.html">Cardápio</a></li>
+        <li><a href="/delivery/index.html">Delivery</a></li>
+        <li><a href="/evento/index.html">Evento</a></li>
+        <li><a href="/promocoes/index.html">Promoções</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO COM IMAGEM PRINCIPAL -->
+    <main class="promo-main">
+      <div class="promo-hero">
+        <img
+          src="/assets/promocao-principal.jpg"
+          alt="Promoções da Semana"
+          class="promo-hero-img"
+        />
+        <div class="promo-hero-overlay">
+          <h1>promoções da semana</h1>
+          <p>sabores especiais para cada dia</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- DA SEMANA -->
+    <section class="promo-section">
+      <div class="promo-destaque">
+        <div class="promo-img">
+          <img src="/assets/cardapio-salada.jpg" alt="Salada combinada menor" />
+        </div>
+        <div class="promo-card">
+          <h3>segunda-feira</h3>
+          <p>salada combinada menor</p>
+          <span>R$ 36,80</span>
+        </div>
+      </div>
+
+      <div class="promo-destaque invertido">
+        <div class="promo-img">
+          <img
+            src="/assets/promocao-penne.jpg"
+            alt="Penne ao funghi com tiras de mignon"
+          />
+        </div>
+        <div class="promo-card">
+          <h3>terça-feira</h3>
+          <p>penne ao funghi com tiras de mignon</p>
+          <span>R$ 44,00</span>
+        </div>
+      </div>
+
+      <div class="promo-destaque">
+        <div class="promo-img">
+          <img src="/assets/cardapio-massa.jpg" alt="Massa combinada" />
+        </div>
+        <div class="promo-card">
+          <h3>quarta-feira</h3>
+          <p>massa combinada</p>
+          <span>R$ 38,90</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIZZA -->
+    <section class="promo-section destaque">
+      <h2>pizza</h2>
+
+      <div class="promo-destaque">
+        <div class="promo-img">
+          <img
+            src="/assets/promocao-pizza.jpg"
+            alt="Calabresa, zucchini e margherita"
+          />
+        </div>
+        <div class="promo-card">
+          <h3>segunda a terça</h3>
+          <p>calabresa, zucchini e marguerita</p>
+          <span>R$ 36,90</span>
+        </div>
+      </div>
+
+      <div class="promo-destaque invertido">
+        <div class="promo-img">
+          <img
+            src="/assets/promocao-pizza2.jpg"
+            alt="Compre 2 pizzas e ganhe 1 clássica"
+          />
+        </div>
+        <div class="promo-card">
+          <h3>quarta-feira</h3>
+          <p>compre 2 pizzas e ganhe 1 clássica</p>
+          <small>(margherita ou marinata)</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRINKS -->
+    <section class="promo-section">
+      <h2>drinks</h2>
+
+      <div class="promo-destaque">
+        <div class="promo-img">
+          <img
+            src="/assets/promocao-drink.jpg"
+            alt="25% de desconto nos drinks"
+          />
+        </div>
+        <div class="promo-card">
+          <h3>quarta a quinta</h3>
+          <p>25% de desconto</p>
+          <span>das 17h às 20h</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-conteudo">
+        <div class="footer-bloco">
+          <h3>Horários</h3>
+          <p>Segunda a Sexta: 11h às 21h</p>
+          <p>Sábado: 11h às 17h</p>
+          <p>Domingo: Fechado</p>
+        </div>
+
+        <div class="footer-bloco footer-centro">
+          <p class="footer-copy">Espaço Café Central</p>
+        </div>
+
+        <div class="footer-bloco">
+          <h3>Localização</h3>
+          <p>Galeria Azarias Vilela, 36</p>
+          <p>Centro — Juiz de Fora, MG</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a
+      href="https://wa.me/553232168845"
+      class="zap-flutuante"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco pelo WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+      const toggle = document.getElementById('navToggle')
+      const overlay = document.getElementById('navOverlay')
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('aberto')
+        overlay.classList.toggle('aberto')
+      })
+
+      overlay.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('aberto')
+          overlay.classList.remove('aberto')
+        })
+      })
+    </script>
+  </body>
+</html>

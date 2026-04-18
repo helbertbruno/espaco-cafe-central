@@ -1,0 +1,525 @@
+/* RESET GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CORPO DA PAGINA */
+body {
+  background-color: #000;
+  overflow-x: hidden;
+  font-family: 'Jost', Arial, sans-serif;
+}
+
+/* ========================
+   HERO
+======================== */
+main {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  z-index: 0;
+}
+
+.centralizado {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.centralizado h1 {
+  color: #fffff0;
+  font-weight: 900;
+  font-size: clamp(1.8em, 5vw, 3.8em);
+  line-height: 1.2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  -webkit-text-stroke: 1px #000;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.titulo-sub {
+  font-size: 0.75em;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 0.5px #000;
+}
+
+.hero-slogan {
+  color: #c79f5e;
+  font-size: 1.1em;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  main {
+    min-height: 95vh;
+  }
+
+  .hero-img {
+    object-position: center 50%;
+  }
+}
+
+/* ========================
+   SEÇÃO AMBIENTE
+======================== */
+.ambiente {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to bottom,
+    #f5ede0 0%,
+    #c4b09a 35%,
+    #6b5a4a 65%,
+    #1a1a1a 100%
+  );
+  text-align: center;
+  width: 100%;
+}
+
+.ambiente h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.ambiente-bloco {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+}
+
+.ambiente-item {
+  flex: 1;
+}
+
+.ambiente-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ambiente-texto {
+  flex: 1;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 40px 35px;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #c79f5e;
+  font-style: italic;
+}
+
+/* ========================
+   SEÇÃO CARDÁPIO
+======================== */
+.cardapio-section {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.cardapio-titulo {
+  font-size: 2em;
+  color: #c79f5e;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.cardapio-bloco {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cardapio-img {
+  width: 55%;
+  height: 780px;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.cardapio-card {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 50px 50px 50px 120px;
+  margin-left: -80px;
+  flex: 1;
+  text-align: left;
+  z-index: 1;
+}
+
+.cardapio-card p {
+  color: #c79f5e;
+  font-style: italic;
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.cardapio-btn {
+  display: block;
+  margin-top: 30px;
+  padding: 16px;
+  background-color: #c79f5e;
+  color: #1a1a1a;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.cardapio-btn:hover {
+  background-color: #a07a3e;
+  color: #fff;
+}
+
+/* ========================
+   SEÇÃO EVENTO
+======================== */
+.evento-section {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to bottom,
+    #1a1a1a 0%,
+    #6b5a4a 30%,
+    #c4b09a 60%,
+    #f5ede0 100%
+  );
+  text-align: center;
+}
+
+.evento-titulo {
+  font-size: 2em;
+  color: #c79f5e;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.evento-bloco {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.evento-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 50px 120px 50px 50px;
+  margin-right: -80px;
+  flex: 1;
+  text-align: left;
+  z-index: 1;
+}
+
+.evento-card p {
+  color: #c79f5e;
+  font-style: italic;
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.evento-btn {
+  display: block;
+  margin-top: 30px;
+  padding: 16px;
+  background-color: #c79f5e;
+  color: #1a1a1a;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.evento-btn:hover {
+  background-color: #a07a3e;
+  color: #fff;
+}
+
+.evento-img {
+  width: 55%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background-color: #222;
+  border-top: 1px solid #c79f5e33;
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 30px 20px;
+}
+
+.footer-bloco {
+  flex: 1;
+}
+
+.footer-bloco h3 {
+  color: #c79f5e;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-bloco p {
+  font-size: 0.85em;
+  line-height: 1.8;
+  color: #aaa;
+}
+
+.footer-centro {
+  text-align: center;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #666 !important;
+}
+
+/* ========================
+   RESPONSIVO
+======================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .cardapio-img {
+    width: 50%;
+    height: 500px;
+  }
+
+  .cardapio-card {
+    padding: 40px 40px 40px 80px;
+    margin-left: -60px;
+  }
+
+  .evento-img {
+    width: 50%;
+    height: 400px;
+  }
+
+  .evento-card {
+    padding: 40px 80px 40px 40px;
+    margin-right: -60px;
+  }
+
+  .ambiente-bloco {
+    gap: 24px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  /* HERO */
+  main {
+    min-height: 60vh;
+  }
+
+  .centralizado {
+    padding-top: 100px;
+  }
+
+  .hero-img {
+    object-position: center 10%;
+  }
+
+  /* AMBIENTE */
+  .ambiente {
+    padding: 40px 16px;
+  }
+
+  .ambiente h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .ambiente-bloco,
+  .ambiente-bloco.invertido {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 30px;
+  }
+
+  .ambiente-bloco.invertido .ambiente-texto {
+    order: 2;
+  }
+
+  .ambiente-bloco.invertido .ambiente-item {
+    order: 1;
+  }
+
+  .ambiente-item {
+    width: 100%;
+  }
+
+  .ambiente-item img {
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .ambiente-texto {
+    padding: 20px 16px;
+    text-align: center;
+    font-size: 0.95em;
+    border-radius: 0 0 10px 10px;
+  }
+
+  /* CARDÁPIO */
+  .cardapio-section {
+    padding: 40px 16px;
+  }
+
+  .cardapio-titulo {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .cardapio-bloco {
+    flex-direction: column;
+  }
+
+  .cardapio-img {
+    width: 100%;
+    height: 260px;
+    object-position: center 20%;
+    border-radius: 10px 10px 0 0;
+    flex-shrink: unset;
+  }
+
+  .cardapio-card {
+    width: 100%;
+    margin-left: 0;
+    padding: 24px 16px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+  .cardapio-card p {
+    font-size: 0.95em;
+  }
+
+  .cardapio-btn {
+    margin-top: 20px;
+    font-size: 0.9em;
+    padding: 14px;
+  }
+
+  /* EVENTO */
+  .evento-section {
+    padding: 40px 16px;
+  }
+
+  .evento-titulo {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .evento-bloco {
+    flex-direction: column;
+  }
+
+  .evento-img {
+    width: 100%;
+    height: 260px;
+    border-radius: 10px 10px 0 0;
+    flex-shrink: unset;
+    order: 1;
+  }
+
+  .evento-card {
+    width: 100%;
+    margin-right: 0;
+    padding: 24px 16px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    order: 2;
+  }
+
+  .evento-card p {
+    font-size: 0.95em;
+  }
+
+  .evento-btn {
+    margin-top: 20px;
+    font-size: 0.9em;
+    padding: 14px;
+  }
+
+  /* FOOTER */
+  .footer-conteudo {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 400px) {
+  .ambiente-item img {
+    height: 180px;
+  }
+
+  .cardapio-img,
+  .evento-img {
+    height: 200px;
+  }
+}
