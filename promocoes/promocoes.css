@@ -150,30 +150,78 @@
   color: #fff;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .promo-hero-overlay h1 {
-    font-size: 2em;
+/* ========================
+   RESPONSIVO
+======================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .promo-img {
+    width: 50%;
+    height: 360px;
   }
 
-  .promo-destaque {
+  .promo-card {
+    padding: 40px 40px 40px 80px;
+    margin-left: -60px;
+  }
+
+  .promo-destaque.invertido .promo-card {
+    margin-right: -60px;
+    padding: 40px 80px 40px 40px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .promo-main {
+    margin-top: 80px;
+  }
+
+  .promo-hero {
+    height: 50vh;
+  }
+
+  .promo-hero-overlay h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+  }
+
+  .promo-section {
+    padding: 50px 16px;
+  }
+
+  .promo-section h2 {
+    margin-bottom: 30px;
+  }
+
+  /* remove margens negativas e empilha */
+  .promo-destaque,
+  .promo-destaque.invertido {
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .promo-img {
     width: 100%;
-    height: 250px;
+    height: 240px;
+    border-radius: 12px 12px 0 0;
+    flex-shrink: unset;
   }
 
   .promo-card {
-    margin: 0;
-    padding: 25px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 24px 20px;
     text-align: center;
+    border-radius: 0 0 12px 12px;
   }
 
   .promo-destaque.invertido .promo-card {
-    margin: 0;
-    padding: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 24px 20px;
   }
 
   .zap-flutuante {
@@ -185,5 +233,20 @@
 
   .zap-flutuante i {
     font-size: 26px;
+  }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 400px) {
+  .promo-hero {
+    height: 40vh;
+  }
+
+  .promo-img {
+    height: 200px;
+  }
+
+  .promo-hero-overlay h1 {
+    font-size: 1.5em;
   }
 }
