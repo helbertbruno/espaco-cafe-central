@@ -280,10 +280,16 @@ footer {
     flex: unset;
   }
 
+  /* FOOTER — correção do quebra pra esquerda no mobile */
   .footer-conteudo {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     gap: 24px;
+    text-align: center;
+  }
+
+  .footer-bloco {
+    width: 100%;
   }
 
   /* botão flutuante menor no mobile */
