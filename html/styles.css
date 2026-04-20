@@ -504,11 +504,16 @@ footer {
     padding: 14px;
   }
 
-  /* FOOTER */
+  /* FOOTER — correção do quebra pra esquerda no mobile */
   .footer-conteudo {
     flex-direction: column;
+    align-items: center;
     gap: 24px;
     text-align: center;
+  }
+
+  .footer-bloco {
+    width: 100%;
   }
 }
 
