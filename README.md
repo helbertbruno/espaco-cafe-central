@@ -9,9 +9,10 @@ Projeto real desenvolvido como freelance, com foco em design premium, responsivi
 ---
 
 ## 📸 Preview
-
-
-
+ ![Home](./assets/preview-home.png)
+ ![Fachada](./assets/preview-fachada.png) 
+ ![Cardápio](./assets/preview-cardapio.png)
+ 
 ## 📄 Páginas
 
 - **Home** — apresentação do espaço, ambientes, cardápio e eventos
